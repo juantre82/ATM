@@ -35,8 +35,8 @@ const ATMDeposit = ({ onChange, isDeposit }) => {
     return (
       <form onSubmit={handleSubmit}>
         <h2 id="total">{status}</h2>
-        <button onClick={() => setIsDeposit(true)}>Deposit</button>
-        <button onClick={() => setIsDeposit(false)}>Cash Back</button>
+        <button id='dep-button' onClick={() => setIsDeposit(true)}>Deposit</button>
+        <button id='cb-button' onClick={() => setIsDeposit(false)}>Cash Back</button>
         <ATMDeposit onChange={handleChange} isDeposit={isDeposit}></ATMDeposit>
       </form>
     );
